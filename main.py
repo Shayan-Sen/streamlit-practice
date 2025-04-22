@@ -32,3 +32,18 @@ elif gender == "Female":
     st.write("You are a WOMAN")
 elif gender == "Rather Not Say":
     st.write("You are RETARDED")
+
+if st.button("Hi"):
+    st.success("Hello there :)")
+if st.button("Bye"):
+    st.error("Bye :(")
+
+st.radio("Pick elective subjects",["Biology","Computer Science","Physcology"],index=None)
+
+slider = st.slider(label="Custom Slider",max_value=1000,value=10, min_value=0, step= 1)
+
+cgpa = st.number_input(label="CGPA",min_value=0.0,max_value=10.0,step=0.05)
+
+sidebar= st.sidebar.button("Balloons!!")
+if sidebar:
+    st.sidebar.balloons()
